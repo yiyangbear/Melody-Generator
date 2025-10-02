@@ -1,0 +1,168 @@
+QMainWindow {
+    background: rgba(25, 25, 35, 0.85);
+    border-radius: 15px;
+}
+
+QWidget#centralWidget {
+    background: transparent;
+}
+
+QGroupBox {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(70, 70, 90, 0.8),
+                                stop:1 rgba(50, 50, 70, 0.8));
+    border-radius: 5px;
+}
+
+QLabel {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(90, 100, 220, 0.8),
+                                stop:1 rgba(70, 80, 200, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(110, 120, 240, 0.9),
+                                stop:1 rgba(90, 100, 220, 0.9));
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(70, 80, 200, 0.9),
+                                stop:1 rgba(50, 60, 180, 0.9));
+}
+
+QPushButton:disabled {
+    background: rgba(100, 100, 100, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+QPushButton#play-btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(90, 180, 90, 0.8),
+                                stop:1 rgba(70, 160, 70, 0.8));
+}
+
+QPushButton#play-btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(110, 200, 110, 0.9),
+                                stop:1 rgba(90, 180, 90, 0.9));
+}
+
+QPushButton#save-btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(220, 160, 60, 0.8),
+                                stop:1 rgba(200, 140, 40, 0.8));
+}
+
+QPushButton#save-btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(240, 180, 80, 0.9),
+                                stop:1 rgba(220, 160, 60, 0.9));
+}
+
+QComboBox {
+    background: rgba(40, 40, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    min-width: 80px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    width: 0;
+    height: 0;
+}
+
+QComboBox QAbstractItemView {
+    background: rgba(40, 40, 50, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    selection-background-color: rgba(90, 100, 220, 0.8);
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 6px;
+    background: rgba(60, 60, 70, 0.7);
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgba(90, 100, 220, 0.9),
+                                stop:1 rgba(70, 80, 200, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 18px;
+    margin: -6px 0;
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 rgba(110, 120, 240, 0.9),
+                                stop:1 rgba(90, 100, 220, 0.9));
+}
+
+QProgressBar {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 rgba(90, 100, 220, 0.8),
+                                stop:1 rgba(70, 80, 200, 0.8));
+    border-radius: 4px;
+}
+
+QTextEdit {
+    background: rgba(30, 30, 40, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+QSpinBox {
+    background: rgba(40, 40, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
