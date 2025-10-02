@@ -50,24 +50,6 @@ A Python-based application that generates random melody MIDI files using various
 3. **Run the application**
    python src/main.py
 
-## Project Structure
-
-melody-generator/
-├── scripts/              # Build scripts
-│   ├── build_mac_app.py  # macOS application 
-│   └── create_dmg.py     # DMG creator for 
-├── src/                  # Source code
-│   ├── generator.py      # Core melody generation 
-│   ├── gui.py           # Graphical user interface
-│   └── main.py          # Application entry point
-├── resources/           # Application resources
-│   └── icons/
-│       ├── app_icon.icns # macOS application icon
-│       └── style.css     # UI styling
-├── requirements.txt     # Python dependencies
-├── README.md           # This file
-├── LICENSE             # MIT License
-└── .gitignore          # Git ignore rules
 
 ## Usage
 
@@ -180,7 +162,7 @@ This project is open source and available under the MIT License. See the `LICENS
 
 ## Support
 
-For issues and questions, please check the GitHub repository or contact the development team.
+For issues and questions, please check the GitHub repository or contact me.
 
 ---
 
