@@ -113,8 +113,11 @@ python-rtmidi>=1.4.0
 
 ### Algorithm Features
 
-- **Scale-based Generation**: Melodies are constrained to selected scales for musical coherence
-- **Melodic Contour Control**: Supports ascending, descending, arch, and inverted arch shapes
+- **Scale Construction**: Based on the chosen *key* and *mode*, the program builds a pitch set using predefined scale patterns.  
+   Example: `C Major → [60, 62, 64, 65, 67, 69, 71, 72]` (in MIDI note numbers)
+- **Note Sequence Generation**: - Each measure contains a fixed number of notes (default: 4).  
+   - For each note, the algorithm decides whether to move **stepwise** (to a neighboring pitch) or **jump** to a random note, based on probability.  
+   - The duration (`120` or `240` ticks) and velocity (`80–110`) are also randomized to ensure dynamic variation.
 - **Rhythmic Patterns**: Balanced, syncopated, and legato rhythm types
 - **Musical Rules**: Avoids excessive repetition, controls interval leaps, and ensures proper resolution
 
@@ -155,6 +158,12 @@ python-rtmidi>=1.4.0
 ## Contributing
 
 Feel free to fork this project and submit pull requests for any improvements. Suggestions for additional scales, generation algorithms, or UI enhancements are welcome.
+
+## Future Improvements
+- **Chord Progression Support**: Add harmonic context to melodies through algorithmic chord generation.
+- **Motif Development**: Implement thematic variation and repetition to create more musical phrases.
+- **Rhythm Pattern Generation**：Introduce rhythmic templates for more diverse groove structures.
+- **AI-Driven Composition**： Explore Markov chains or Transformer-based models for intelligent melody synthesis.
 
 ## License
 
