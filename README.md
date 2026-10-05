@@ -29,7 +29,10 @@ A Python-based application that generates random melody MIDI files using various
 - Drag the application to your Applications folder
 
 **Windows Users:**
-- *Coming soon in next update* - Check back for the `.exe` installer
+- Download `MelodyGenerator-Windows-x64.zip` from the Releases section
+- Extract the ZIP archive
+- Double-click `MelodyGenerator.exe` to launch the application
+- No Python installation is required for the standalone version
 
 ### Option 2: Run from Source Code
 
@@ -40,15 +43,25 @@ A Python-based application that generates random melody MIDI files using various
 
 #### Installation Steps
 
-1. **Clone or download the repository**
-   git clone https://github.com/yiyangbear/melody-generator.git
-   cd melody-generator
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yiyangbear/Melody-Generator.git
+
+cd Melody-Generator
+```
 
 2. **Install dependencies**
+
+```bash
    pip install -r requirements.txt
+```
 
 3. **Run the application**
+
+```bash
    python src/main.py
+```
 
 
 ## Usage
@@ -85,19 +98,39 @@ A Python-based application that generates random melody MIDI files using various
 
 ### Building from Source
 
+### Building from Source
+
 #### macOS Application
 
 To build the macOS application bundle:
 
+```bash
 python scripts/build_mac_app.py
+```
 
 This will create a standalone `.app` bundle in the `dist` folder.
 
+#### Windows Application
+To build the standalone Windows executable, run the following command on Windows:
+
+```bash
+python scripts\build_windows.py
+```
+The generated executable will be located at:
+
+```bash
+dist\MelodyGenerator.exe
+```
+PyInstaller must be run on Windows to produce the Windows executable.
+
 #### Creating DMG for Distribution
 
-After building the app, create a distributable DMG:
+After building the macOS app, create a distributable DMG:
 
+```bash
 python scripts/create_dmg.py
+```
+Windows executable should be built under Windows environment.
 
 ### Dependencies
 
@@ -106,7 +139,7 @@ All Python dependencies are listed in `requirements.txt`:
 ```
 mido>=1.2.10
 PyQt5>=5.15.0
-python-rtmidi>=1.4.0
+pyinstaller>=5.0.0
 ```
 
 ## Technical Details
@@ -125,7 +158,7 @@ python-rtmidi>=1.4.0
 
 ### For Standalone Application:
 - **macOS**: 10.14 or later
-- **Windows**: *Coming soon*
+- **Windows**: Windows 10 or later
 - **RAM**: 512MB minimum
 - **Storage**: 100MB free space
 
@@ -175,6 +208,8 @@ For issues and questions, please check the GitHub repository or contact me.
 
 ---
 
-*Version 1.0 | Designed for music creators, educators, and enthusiasts* 🎵
+*Version 1.1.0 | Designed for music creators, educators, and enthusiasts* 🎵
+
+Standalone builds are available for macOS and Windows from the GitHub Releases page.
 
 **Note**: Windows executable (.exe) will be available in the next update. Currently available as macOS .dmg and Python source code.
