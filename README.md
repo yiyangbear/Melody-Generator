@@ -98,8 +98,6 @@ cd Melody-Generator
 
 ### Building from Source
 
-### Building from Source
-
 #### macOS Application
 
 To build the macOS application bundle:
@@ -211,5 +209,3 @@ For issues and questions, please check the GitHub repository or contact me.
 *Version 1.1.0 | Designed for music creators, educators, and enthusiasts* 🎵
 
 Standalone builds are available for macOS and Windows from the GitHub Releases page.
-
-**Note**: Windows executable (.exe) will be available in the next update. Currently available as macOS .dmg and Python source code.
