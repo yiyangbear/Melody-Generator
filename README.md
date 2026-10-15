@@ -34,6 +34,18 @@ A Python-based application that generates random melody MIDI files using various
 - Double-click `MelodyGenerator.exe` to launch the application
 - No Python installation is required for the standalone version
 
+For the [v1.1.0 release](https://github.com/yiyangbear/Melody-Generator/releases/tag/v1.1.0), the SHA256 of `MelodyGenerator-Windows-x64.zip` is:
+
+```text
+F91F791F0FF118F0F8C113DE8BA3335FA677B9D075EABAEA7B0B44205A57C61B
+```
+
+Before extracting, run this command in PowerShell from the download folder and confirm that the `Hash` matches the value above:
+
+```powershell
+Get-FileHash .\MelodyGenerator-Windows-x64.zip -Algorithm SHA256
+```
+
 ### Option 2: Run from Source Code
 
 #### Prerequisites
